@@ -1,0 +1,121 @@
+/* static/style.css */
+
+/* --- 1. Reset & Global Setup --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif; /* Font lebih modern */
+    background: linear-gradient(135deg, #fff5f8 0%, #ffe0e9 100%); /* Background gradient pink lembut */
+    display: flex;
+    justify-content: center; /* Posisikan horizontal di tengah */
+    align-items: center;     /* Posisikan vertikal di tengah */
+    height: 100vh;           /* Tinggi penuh layar */
+    overflow: hidden;        /* Hilangkan scroll bar utama */
+}
+
+/* --- 2. Main Container (Card) --- */
+.box {
+    background: rgba(255, 255, 255, 0.95); /* Putih transparan sedikit */
+    padding: 40px 30px;
+    border-radius: 25px; /* Sudut lebih membulat */
+    box-shadow: 0 15px 35px rgba(255, 182, 193, 0.2); /* Bayangan soft pink */
+    width: 380px;
+    text-align: center;
+    border: 2px solid #ffb6c1; /* Border pink muda */
+    transition: transform 0.3s ease; /* Efek hover nanti */
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Sedikit terangkat saat kursor di atasnya */
+}
+
+/* --- 3. Text Styling --- */
+h2 {
+    color: #ff69b4; /* Hot pink untuk judul */
+    margin-bottom: 8px;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+p.subtitle {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+/* --- 4. Form & Input Styling --- */
+form {
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #ffe0e9;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: #555;
+    transition: all 0.3s ease;
+    background-color: #fff9fb;
+}
+
+input:focus {
+    border-color: #ff69b4; /* Warna border saat diklik */
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.1);
+}
+
+/* --- 5. Button Styling --- */
+button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(45deg, #ff69b4, #ffb6c1); /* Gradient pink untuk tombol */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase; /* Huruf kapital semua agar tegas */
+    letter-spacing: 1px;
+}
+
+button:hover {
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4); /* Bayangan saat tombol di-hover */
+}
+
+button:active {
+    transform: scale(0.98); /* Efek tombol tertekan sedikit */
+}
+
+/* --- 6. Result Area Styling --- */
+.hasil {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #fff0f5; /* Lavender blush background */
+    border-radius: 15px;
+    border: 1px dashed #ffb6c1; /* Border putus-putus pink */
+}
+
+.hasil p {
+    margin-bottom: 10px;
+    color: #ff69b4;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.hasil h1 {
+    margin: 0;
+    color: #ff1493; /* Deep pink untuk hasil nominal */
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05); /* Sedikit shadow di teks agar elegan */
+}
